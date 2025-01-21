@@ -1,0 +1,183 @@
+/* General styling for the container */
+.tiptap-container {
+    max-width: 1200px;
+    /* Increased from 800px to 1200px */
+    margin: 20px auto;
+    padding: 20px;
+    /* Increased padding */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Toolbar styling */
+.tiptap-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+/* Button styling */
+.tiptap-toolbar button {
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.tiptap-toolbar button:hover {
+    background: #f0f0f0;
+    border-color: #999999;
+}
+
+.tiptap-toolbar button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Active button state */
+.tiptap-toolbar button.is-active {
+    background: #ddd;
+    border-color: #666;
+}
+
+/* Editor content styling */
+.tiptap-editor {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    /* Increased padding */
+    min-height: 400px;
+    /* Increased height from 200px to 400px */
+    width: 100%;
+    /* Ensure the editor takes full width */
+    box-sizing: border-box;
+    /* Include padding and border in width/height calculations */
+    background: #fff;
+}
+
+.tiptap-editor p {
+    margin: 5px 0;
+    height: 2em;
+}
+
+/* Heading styling */
+.tiptap-editor h1 {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin: 20px 0 10px;
+}
+
+.tiptap-editor h2 {
+    font-size: 1.75em;
+    font-weight: bold;
+    color: #444;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4px;
+    margin: 18px 0 8px;
+}
+
+.tiptap-editor h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #555;
+    margin: 16px 0 6px;
+}
+
+.tiptap-editor h4 {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #666;
+    margin: 14px 0 4px;
+}
+
+.tiptap-editor h5 {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #777;
+    margin: 12px 0 2px;
+}
+
+.tiptap-editor h6 {
+    font-size: 1em;
+    font-weight: bold;
+    color: #888;
+    margin: 10px 0;
+}
+
+/* Code block styling */
+.tiptap-editor pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+}
+
+/* Blockquote styling */
+.tiptap-editor blockquote {
+    border-left: 3px solid #6a1b9a;
+    /* Purple border */
+    padding-left: 10px;
+    margin-left: 0;
+    color: #555;
+    font-style: italic;
+    background: #f9f0ff;
+    /* Light purple background */
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 0;
+}
+
+/* Horizontal rule styling */
+.tiptap-editor hr {
+    border: 0;
+    height: 1px;
+    background: #6a1b9a;
+    /* Purple line */
+    margin: 20px 0;
+}
+
+/* Hard break styling */
+.tiptap-editor br {
+    display: block;
+    content: "";
+    margin: 10px 0;
+}
+
+/* List styling */
+.tiptap-editor ul,
+.tiptap-editor ol {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.tiptap-editor ul {
+    list-style-type: disc;
+}
+
+.tiptap-editor ol {
+    list-style-type: decimal;
+}
+
+/* Styling input elements inside the editor */
+.tiptap-editor input,
+.tiptap-editor textarea {
+    width: 100%;
+    /* Ensure input and textarea take full width */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    /* Include padding and border in width/height calculations */
+}
